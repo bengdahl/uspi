@@ -24,14 +24,14 @@ endif
 
 -include $(USPIHOME)/Config.mk
 
-AARCH64	?= 0
+AARCH64	?= 1
 
 ifeq ($(strip $(AARCH64)),0)
 RASPPI	?= 1
 PREFIX	?= arm-none-eabi-
 else
 RASPPI	= 3
-PREFIX	?= aarch64-linux-gnu-
+PREFIX	?= aarch64-elf-
 endif
 
 CC	= $(PREFIX)gcc
