@@ -26,6 +26,8 @@
 extern "C" {
 #endif
 
+typedef unsigned char u8;
+
 //
 // Version information
 //
